@@ -1,0 +1,19 @@
+
+<h1>Invitations</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>E-mail</th>
+      <th>Message</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each model as |message|}}
+    <tr>
+      <th>{{message.id}}</th>
+      <td>{{message.email}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
