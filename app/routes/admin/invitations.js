@@ -6,6 +6,7 @@ export default Ember.Route.extend({
   },
   actions: {
     deleteInvitation(invitation) {
+      console.log(invitation);
       let confirmation = confirm('Are you sure?');
 
       if (confirmation) {

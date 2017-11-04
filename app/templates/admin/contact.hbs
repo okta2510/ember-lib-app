@@ -12,7 +12,7 @@
   {{#each model as |message|}}
     <tr>
       <th>{{message.id}}</th>
-      <td>{{message.email}}</td>
+      <td>{{message.email}} <button class="btn btn-danger btn-xs" {{action 'deleteInvitation' message}}>Delete</button></td>
     </tr>
   {{/each}}
   </tbody>
